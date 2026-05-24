@@ -1,0 +1,10 @@
+_build/
+*.install
+*.coverage
+*.coverage.xml
+_coverage*/
+test/generated/*
+!test/generated/
+!test/generated/dune
+*.wip.*
+.codex

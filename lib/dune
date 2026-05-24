@@ -1,0 +1,7 @@
+(library
+ (name rfc6570)
+ (public_name rfc6570)
+ (modules rfc6570)
+ (libraries uunf.string)
+ (instrumentation
+  (backend bisect_ppx)))

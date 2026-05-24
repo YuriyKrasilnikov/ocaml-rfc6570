@@ -1,0 +1,11 @@
+(rule
+ (targets abnf-corpus.tsv abnf-corpus.summary)
+ (deps ../../tools/gen_abnf_corpus.py)
+ (action
+  (run python3 %{dep:../../tools/gen_abnf_corpus.py} --out-dir .)))
+
+(rule
+ (targets operator-matrix.tsv operator-matrix.summary)
+ (deps ../../tools/gen_operator_matrix.py)
+ (action
+  (run python3 %{dep:../../tools/gen_operator_matrix.py} --out-dir .)))

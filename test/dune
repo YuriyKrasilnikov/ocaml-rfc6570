@@ -1,0 +1,28 @@
+(tests
+ (names
+  test_spec_examples
+  test_spec_examples_by_section
+  test_extended_examples
+  test_negative_examples
+  test_parser_abnf
+  test_public_api
+  test_value_model
+  test_unicode_value_model
+  test_nfc_policy
+  test_encoding
+  test_literal_expansion
+  test_expansion_matrix
+  test_operator_cross_product
+  test_error_reporting
+  test_diagnostic_expansion
+  test_generated_abnf_corpus
+  test_generated_operator_matrix
+  test_parser_error_locations
+  test_roundtrip)
+ (libraries rfc6570 alcotest yojson)
+ (deps
+  generated/abnf-corpus.tsv
+  generated/abnf-corpus.summary
+  generated/operator-matrix.tsv
+  generated/operator-matrix.summary
+  (source_tree uritemplate-test)))
